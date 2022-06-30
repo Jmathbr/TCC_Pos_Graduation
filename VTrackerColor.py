@@ -57,10 +57,8 @@ while True:
             if radius > 0.5:
                 # draw the circle and centroid on the frame,
                 # then update the list of tracked points
-                cv2.circle(frame, (int(x), int(y)),
-                           int(radius), colors[key], 2)
-                cv2.putText(frame, key + " object", (int(x-radius), int(y - radius)),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, colors[key], 2)
+                cv2.circle(frame, (int(x), int(y)),int(radius), colors[key], 2)
+                cv2.putText(frame, key + " object", (int(x-radius), int(y - radius)),cv2.FONT_HERSHEY_SIMPLEX, 0.6, colors[key], 2)
 
     # show the frame to our screen
     cv2.imshow("Frame", frame)

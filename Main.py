@@ -3,8 +3,6 @@ import imutils
 import cv2
 import json
 
-#trackbar callback fucntion to update HSV value
-# optional argument for trackbars
 def nothing(x):
     pass
 

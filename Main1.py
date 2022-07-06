@@ -4,6 +4,10 @@ import cv2
 import json
 from time import sleep
 
+
+#Criar tratativa de erro para quando o centro do galao estiver em cima da linha
+#Suguerir usar o tempo como parametro para o tempo de deteccao
+
 largura_min = 80  # Largura minima do retangulo
 altura_min = 80  # Altura minima do retangulo
 offset = 6  # Erro permitido entre pixel

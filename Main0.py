@@ -74,10 +74,10 @@ while True:
         M = cv2.moments(c)
         center = (int(M["m10"] / M["m00"]), int(M["m01"] / M["m00"]))
 
-        if radius > 10:
+        if radius > 5:
             cv2.circle(frame, (int(x), int(y)), int(radius),
                        (0, 255, 255), 2)
-            cv2.circle(frame, center, 5, (0, 0, 255), -1)
+            cv2.circle(frame, center, 5, (0, 0, 255), 3)
 
             cv2.putText(frame, "Contagem: {}".format(str(len(cnts))), (5, 50),
                 cv2.FONT_HERSHEY_SIMPLEX, 0.6, (250, 0, 1), 2)
